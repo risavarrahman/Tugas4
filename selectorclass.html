@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>Selector Class</title>
+    <!--tag sebagai identifier bahwa script yang digunakan adalah JQuery-->
+    <script src="jquery-3.6.0.min.js"></script>
+    <script type = "text/javascript">
+
+      // Elemen jquery untuk menambahkan id daftar menjadi class merahkuning 
+      // class subdaftar menjadi class kuninghitam
+      $(document).ready(function(){
+        $("#daftar").addClass("merahkuning");
+        $(".subdaftar").addClass("kuninghitam");
+      });
+    </script>
+
+    <!-- script CSS untuk mengubah id daftar -->
+    <style type="text/css">
+      .merahkuning{
+        color: red;
+        font-weight: bold;
+        background-color: yellow;
+        padding: 3px;
+      }
+      .kuninghitam{
+        color: blue;
+        background-color: green;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <!-- membuat paragraf dan list item -->
+    <div>
+      <p>Paragraf Pertama</p>
+    </div>
+    <div>
+      <ul id = "daftar">
+        <li>Items 1</li>
+        <li class="subdaftar">Items 2</li>
+        <li>Items 3</li>
+      </div>
+    </ul>
+  </body>
+</html>

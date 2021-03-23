@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Events JQuery</title>
+    <!--tag sebagai identifier bahwa script yang digunakan adalah JQuery-->
+    <script src="jquery-3.6.0.min.js"></script>
+    <script type = "text/javascript">
+
+    // Elemen JQuery yang akan menampilkan bahwa website facebook akan ditampilkan
+      $(document).ready(function(){
+        $("a").click(function(){
+          alert("Selamat Datang di Website Facebook");
+        });
+      });
+    </script>
+  </head>
+  <body>
+
+    <!-- Link facebook yang akan dikunjungi langsung -->
+    <a href="http://facebook.com">
+      klik disini untuk membuka website facebook
+    </a>
+  </body>
+</html>

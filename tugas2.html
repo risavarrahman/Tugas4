@@ -1,0 +1,41 @@
+<html>
+<head>
+	<title>Latihan 2 JQuery</title>
+	<!--tag sebagai identifier bahwa script yang digunakan adalah jquery-->
+	<script src="jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+
+		//script JQuery untuk mengubah warna box jika diklik 2x
+		$(document).ready(function(){
+			$("div").dblclick(function(){
+				$(this).css({background:"red"});
+			});
+			
+		});
+
+	</script>
+
+	<!--script CSS untuk membuat box dan format tag paragraf-->
+	<style type="text/css">
+		div{
+			width: 80px;
+			height: 80px;
+			background-color: yellow;
+			float: left;
+			margin: 15px;
+		}
+		p{
+			padding-left: 75px;
+		}
+	</style>
+</head>
+<body>
+	
+	<!--menampilkan tulisan yang jika di klik akan berubah warna -->
+	<p>klik 2x pada kotak untuk merubah warnanya</p>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</body>
+</html>

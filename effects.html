@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Jquery Effects</title>
+    <!--tag sebagai identifier bahwa script yang digunakan adalah JQuery-->
+    <script src = "jquery-3.6.0.min.js"></script>
+    <script type = "text/javascript">
+
+    // Elemen JQuery yang akan menjalankan efek fadeout
+      $(document).ready(function(){
+        setTimeout(function(){
+          $("#kotak").fadeOut("Slow", function(){
+            $("#kotak").remove();
+          });
+        }, 3000);
+      });
+    </script>
+
+    <!-- script CSS untuk mengubah id kotak -->
+    <style type = "text/css">
+      #kotak{
+        width: 300px;
+        height: 60px;
+        background: lightyellow;
+        border: 1px solid black;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- membuat h3 dengan id kotak -->
+    <h3 id="kotak">
+      Perhatikan baik-baik teks ini, karena
+      teks akan hilang dalam hitungan 3 detik
+    </h3>
+  </body>
+</html>

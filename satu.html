@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Latihan Jquery</title>
+    <!--tag sebagai identifier bahwa script yang digunakan adalah JQuery-->
+    <script src = "jquery-3.6.0.min.js"></script>
+    <script type = "text/javascript">
+    
+    // Elemen jquery untuk menampilkan dan menyembunyikan gambar
+    $(document).ready(function(){
+      $(".sembunyi").click(function() {$("#foto").hide("slow")});
+      $(".tampil").click(function() {$("#foto").show("slow")});
+    });    
+  </script>
+  </head>
+  <body>
+
+    <!-- menampilkan button pada halaman web -->
+    <button class = "sembunyi">Sembunyikan</button>
+    <button class = "tampil">Tampilkan</button>
+    <p><img id = "foto" src="electro.png"></p>
+  </body>
+</html>
